@@ -3,10 +3,9 @@ Author: Viranch Mehta
 Email: email@viranch.me
 */
 
-// 1. Auto-check Secure Access Image confirmation box
-// 2. Auto-select 1st option from annoying dropdowns
+// 1. Loop through all anchor tags
+// 2. Clean URLs that match our radar
 
-// Ideal would be injecting `$('a[tabindex="4"]').click()` but jquery inside chrome extn is a pain :(
 var inject = '(' + function() {
 	function parse_query(query) {
 	  var result = {};
